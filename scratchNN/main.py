@@ -21,7 +21,12 @@ neural_network.train(training_inputs, training_outputs, 15000)
 print("Adjusted weights after training:")
 print(neural_network.synaptic_weights)
 
-print("Introduce a new data to process (e.g. '1 0 0'): ", end='')
-new_data = input().split()
-result = neural_network.think(np.array(new_data))
-print("My best forecast is ", result)
+while True:
+    print("Introduce a new data to process (e.g. '1 0 0'): ", end='')
+    try:
+        new_data = input().split()
+    except:
+        break
+    result = neural_network.think(np.array(new_data))
+    print("My best forecast is ", result)
+    print()
