@@ -25,7 +25,7 @@ class NeuralNetwork():
 
     def train(self, inputs, outputs, iters):
         '''Train the network to make accurate predictions while adjusting its weights.'''
-        for iter in iters:
+        for iter in range(iters):
             # siphon the training data via the neuron
             out = self.think(inputs)
             # compute error rate for back propagation
