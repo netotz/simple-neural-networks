@@ -17,7 +17,7 @@ training_inputs = np.array([[0, 0, 1],
 # corresponding outputs
 training_outputs = np.array([[0, 1, 1, 0, 0, 1]]).T
 
-print("The network is training...")
+print("The neuron is training...")
 # arbitrary number of iterations
 neural_network.train(training_inputs, training_outputs, 10000)
 
